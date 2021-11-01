@@ -1,0 +1,35 @@
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Start test public:1:nfa_closure.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Test public:1:nfa_closure is successful.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: End test public:1:nfa_closure.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Start test public:4:re_to_nfa.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Test public:4:re_to_nfa exited with an error.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Failure("unimplemented") in test public:4:re_to_nfa.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from Dune__exe__Public.test_re_to_nfa in file "test/public/public.ml", line 162, characters 11-35
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: 
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: End test public:4:re_to_nfa.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Start test public:6:nfa_new_states.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Test public:6:nfa_new_states exited with an error.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Failure("unimplemented") in test public:6:nfa_new_states.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from Dune__exe__Public.test_nfa_new_states in file "test/public/public.ml", line 129, characters 29-47
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: 
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: End test public:6:nfa_new_states.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Start test public:7:nfa_new_trans.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Test public:7:nfa_new_trans exited with an error.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Failure("unimplemented") in test public:7:nfa_new_trans.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from Dune__exe__Public.test_nfa_new_trans in file "test/public/public.ml", line 145, characters 4-22
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: 
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: End test public:7:nfa_new_trans.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: Start test public:9:regex_to_nfa.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Test public:9:regex_to_nfa exited with an error.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Failure("unimplemented") in test public:9:regex_to_nfa.
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from Dune__exe__Public.test_str_to_nfa_empty in file "test/public/public.ml", line 181, characters 11-57
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 E: 
+2021-10-31T03:46:22+00:00 Davids-MBP.verizon.net#02 I: End test public:9:regex_to_nfa.

@@ -1,0 +1,232 @@
+# dune runtest -f
+# OCAMLPARAM: unset
+# Workspace root: /Users/Nicky/Desktop/330/cmsc330fall21/project3
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/jn/x3lx4bj97q7ck9777lpsv4cr0000gn/T/dune528aa7.output 2> /dev/null
+# Auto-detected concurrency: 4
+# disable binary cache
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/jn/x3lx4bj97q7ck9777lpsv4cr0000gn/T/dune54d8b8.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/Nicky/.opam/4.12.0/lib/toplevel"
+#  ; ocaml_bin = External "/usr/local/bin"
+#  ; ocaml = Ok External "/Users/Nicky/.opam/4.12.0/bin/ocaml"
+#  ; ocamlc = External "/usr/local/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/local/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/local/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/local/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/Nicky/.opam/4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/local/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3"
+#        ; "INSIDE_DUNE" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default"
+#        ; "MANPATH" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/Users/Nicky/.opam/4.12.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/usr/local/lib/ocaml"
+#      ; standard_library = "/usr/local/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "clang"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.3.0"
+#      ; target = "x86_64-apple-darwin20.3.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl src/nfa.ml) > _build/default/src/.p3.objs/nfa.ml.d
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33-32 -g -I src/.p3.objs/byte -I src/.p3.objs/native -intf-suffix .ml -no-alias-deps -opaque -open P3 -o src/.p3.objs/native/p3__Nfa.cmx -c -impl src/nfa.ml)
+$ (cd _build/default/test/pbt && ./pbt.exe)
+>  seed: 149365709
+> generated error fail pass / total     time test name
+> ✗]    1    1    0    0 /  100     0.0s regex_to_nfa_accept
+>
+> === Error ======================================================================
+>
+> Test regex_to_nfa_accept errored on (0 shrink steps):
+>
+> Regex:(((((z)|(e))|(b))|(((e)|(r))|((h)*)))*)*
+> String:eeeeeeeeee
+>
+> exception Failure("unimplemented")
+>
+> ================================================================================
+> failure (0 tests failed, 1 tests errored, ran 1 tests)
+$ (cd _build/default/test/public && ./public.exe)
+> E..EEEEEEE
+> ==============================================================================
+> Error: public:9:regex_to_nfa.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#02.log", line 29, characters 1-1:
+> Error: public:9:regex_to_nfa (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_str_to_nfa_empty in file "test/public/public.ml", line 181, characters 11-57
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:8:nfa_new_finals.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#01.log", line 30, characters 1-1:
+> Error: public:8:nfa_new_finals (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_nfa_new_finals in file "test/public/public.ml", line 157, characters 23-45
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:7:nfa_new_trans.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#02.log", line 21, characters 1-1:
+> Error: public:7:nfa_new_trans (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_nfa_new_trans in file "test/public/public.ml", line 145, characters 4-22
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:5:str_to_nfa.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#01.log", line 22, characters 1-1:
+> Error: public:5:str_to_nfa (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_str_to_nfa in file "test/public/public.ml", line 174, characters 11-49
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:6:nfa_new_states.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#02.log", line 13, characters 1-1:
+> Error: public:6:nfa_new_states (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_nfa_new_states in file "test/public/public.ml", line 129, characters 29-47
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:4:re_to_nfa.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#02.log", line 5, characters 1-1:
+> Error: public:4:re_to_nfa (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_re_to_nfa in file "test/public/public.ml", line 162, characters 11-35
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:3:nfa_to_dfa.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#01.log", line 14, characters 1-1:
+> Error: public:3:nfa_to_dfa (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from Dune__exe__Public.test_nfa_to_dfa in file "test/public/public.ml", line 34, characters 12-25
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: public:0:nfa_accept.
+>
+> File "/Users/Nicky/Desktop/330/cmsc330fall21/project3/_build/default/test/public/oUnit-public-Davids-MBP.verizon.net#01.log", line 2, characters 1-1:
+> Error: public:0:nfa_accept (in the log).
+>
+> Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+> Called from TestUtils.assert_nfa_deny in file "test/testUtils.ml", line 58, characters 5-21
+> Called from Dune__exe__Public.test_nfa_accept in file "test/public/public.ml", line 10, characters 2-23
+> Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+>
+> Failure("unimplemented")
+> ------------------------------------------------------------------------------
+> Ran: 10 tests in: 0.11 seconds.
+> FAILED: Cases: 10 Tried: 10 Errors: 8 Failures: 0 Skip:  0 Todo: 0 Timeouts: 0.
+[1]
